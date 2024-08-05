@@ -2,7 +2,6 @@
 
 Absolutely! Here’s the guide for running a validator node, formatted in Markdown with plenty of emojis:
 
-```markdown
 # Run a Validator Node 🛠️🚀
 
 This guide provides a comprehensive step-by-step approach to setting up and operating a full validator node on the Junction network. Follow these instructions to get started. 📜🔧
