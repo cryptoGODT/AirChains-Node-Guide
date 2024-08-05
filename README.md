@@ -6,7 +6,7 @@ Absolutely! Here’s the guide for running a validator node, formatted in Markdo
 
 This guide provides a comprehensive step-by-step approach to setting up and operating a full validator node on the Junction network. Follow these instructions to get started. 📜🔧
 
-## 1. Download the `junctiond` Binary 📥
+## Download the `junctiond` Binary 📥
 
 Use the `wget` command to download the `junctiond` executable from the Airchains Network GitHub release page:
 
@@ -14,7 +14,7 @@ Use the `wget` command to download the `junctiond` executable from the Airchains
 wget https://github.com/airchains-network/junction/releases/download/v0.1.0/junctiond
 ```
 
-## 2. Make the Binary Executable ⚙️
+## Make the Binary Executable ⚙️
 
 Apply the `chmod +x` command to add executable permissions to the `junctiond` file:
 
@@ -22,7 +22,7 @@ Apply the `chmod +x` command to add executable permissions to the `junctiond` fi
 chmod +x junctiond
 ```
 
-## 3. Move the Binary to a System-Wide Directory 📂
+## Move the Binary to a System-Wide Directory 📂
 
 Transfer the `junctiond` binary to `/usr/local/bin` so it can be accessed from anywhere on the system:
 
@@ -30,7 +30,7 @@ Transfer the `junctiond` binary to `/usr/local/bin` so it can be accessed from a
 sudo mv junctiond /usr/local/bin
 ```
 
-## 4. Initialize the Node with the Moniker 🆔
+## Initialize the Node with the Moniker 🆔
 
 Initialize your node with your chosen moniker:
 
@@ -38,7 +38,7 @@ Initialize your node with your chosen moniker:
 junctiond init <moniker>
 ```
 
-## 5. Update Genesis Configuration 🔄
+## Update Genesis Configuration 🔄
 
 ### Download the Testnet Genesis File 🌐
 
@@ -56,7 +56,7 @@ Replace the existing genesis file in your Junction node configuration directory:
 cp genesis.json ~/.junction/config/genesis.json
 ```
 
-## 6. Update Configuration 🛠️
+## Update Configuration 🛠️
 
 Edit the `~/.junction/config/config.toml` file to set `persistent_peers`:
 
@@ -64,7 +64,7 @@ Edit the `~/.junction/config/config.toml` file to set `persistent_peers`:
 persistent_peers = "de2e7251667dee5de5eed98e54a58749fadd23d8@34.22.237.85:26656"
 ```
 
-## 7. Start the Node 🚀
+## Start the Node 🚀
 
 Before starting the node, set the minimum gas price in your `app.toml` configuration file:
 
@@ -77,7 +77,7 @@ Then, start your node:
 junctiond start
 ```
 
-## 8. Wait for the Node to Sync ⏳
+## Wait for the Node to Sync ⏳
 
 Check the status of the node:
 
@@ -87,7 +87,7 @@ junctiond status
 
 If the `catching_up` field returns `true`, wait until the node completes synchronization. Do not proceed until this process is finished.
 
-## 9. Create a New Account for the Validator 👤
+## Create a New Account for the Validator 👤
 
 Generate your validator wallet's mnemonic and address:
 
@@ -97,11 +97,11 @@ junctiond keys add <validator-name>
 
 **Important:** Write down and securely store the mnemonic and address.
 
-## 10. Fund Your Account 💰
+## Fund Your Account 💰
 
 Ensure your validator account holds a minimum of **58 tokens**. If your account lacks tokens, acquire testnet tokens from our [Discord faucet channel](https://discord.gg/airchains). The faucet is accessible at Airchains Faucet.
 
-## 11. Stake Tokens to Become a Validator 💼
+## Stake Tokens to Become a Validator 💼
 
 Create a `validator.json` file with the following details:
 
@@ -161,7 +161,7 @@ tx: null
 txhash: 3068ED7C9867D9DC926A200363704715AE9470EE73452324A32C2583E62B1D79
 ```
 
-## 12. Query Validator Set 🔍
+## Query Validator Set 🔍
 
 Check if you were accepted as a validator:
 
