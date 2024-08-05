@@ -1,6 +1,7 @@
 # AirChains-Node-Guide
 
-Absolutely! Here’s the guide for running a validator node, formatted in Markdown with plenty of emojis:
+![image](https://github.com/user-attachments/assets/2ab19c2c-98cf-4c74-9ce8-699a0dd5a861)
+
 
 # Run a Validator Node 🛠️🚀
 
